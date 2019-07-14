@@ -153,6 +153,9 @@
         <el-form-item label="Email">
           <el-input v-model="user.email" :disabled="user.role === 'admin'"></el-input>
         </el-form-item>
+        <el-form-item label="Education">
+          <el-input v-model="user.education" :disabled="user.role === 'admin'"></el-input>
+        </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="onSubmit" :disabled="user.role === 'admin'">Update</el-button>
         </el-form-item>
