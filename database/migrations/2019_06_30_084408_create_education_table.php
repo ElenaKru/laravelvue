@@ -20,7 +20,7 @@ class CreateEducationTable extends Migration
             $table->year('end_year');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->timestamps();
+//            $table->timestamps();
         });
     }
 
